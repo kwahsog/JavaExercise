@@ -31,7 +31,7 @@ public abstract class Piece {
 	 * @param length The length of the phone number.
 	 * @return total number of combinations of phone numbers
 	 */	
-	public abstract int search(int start, int length);
+	public abstract int search(int length, int start);
 	
 	/** Method to return total number of combinations of phone numbers, using DEFAULT_PHONENUMBER_LENGTH.
 	 * 

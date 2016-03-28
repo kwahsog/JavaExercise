@@ -42,14 +42,14 @@ public class Knight extends Piece {
 
 	/** Method to return total number of combinations of phone numbers.
 	 * 
-	 * @param start The starting digit on the keypad.
 	 * @param length The length of the phone number.
+	 * @param start The starting digit on the keypad.
 	 * @return total number of combinations of phone numbers
 	 */
 
 	@Override
-	public int search(int start, int length) {
-		return Results[start][length];		
+	public int search(int length, int start) {
+		return Results[length-1][start];		
 	}
 
 	/** Method to return total number of combinations of phone numbers, using DEFAULT_PHONENUMBER_LENGTH.
@@ -60,7 +60,7 @@ public class Knight extends Piece {
 	
 	@Override
 	public int search(int start) {
-		return Results[start][DEFAULT_PHONENUMBER_LENGTH];		
+		return Results[DEFAULT_PHONENUMBER_LENGTH-1][start];		
 	}
 
 }
