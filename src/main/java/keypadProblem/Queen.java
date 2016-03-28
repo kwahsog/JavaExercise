@@ -1,13 +1,13 @@
 package keypadProblem;
 
-/** Knight class, ValidMoves given by chess knight on keypad.
+/** Queen class, ValidMoves given by chess queen on keypad.
  *  Provides methods for filling dynamic programming array and returning amount of phone numbers based on starting number/length.
  * @author Alex
  *
  */
 public class Queen extends Piece {
 	
-	/** Create Knight piece, filling HashMap with valid moves.
+	/** Create Queen piece, filling HashMap with valid moves.
 	 * 
 	 */
 	public Queen() {
